@@ -59,16 +59,19 @@ html, body {
   text-align: left;
 }
 .reveal .slides section {
+  width: 100%;
   height: 100%;
-  padding: 50px 60px 30px;
+  padding: 44px 56px 28px;
   display: flex;
   flex-direction: column;
   box-sizing: border-box;
+  overflow: hidden;
   background:
     radial-gradient(900px 600px at 85% -10%, rgba(196, 98, 45, .12) 0%, transparent 60%),
     radial-gradient(700px 400px at -5% 15%, rgba(255, 200, 87, .04) 0%, transparent 60%),
     var(--bg);
 }
+.reveal .slides section * { box-sizing: border-box; }
 .reveal h1, .reveal h2, .reveal h3, .reveal h4 {
   font-family: var(--font-display);
   font-weight: 700;
@@ -78,10 +81,10 @@ html, body {
   margin: 0;
   line-height: 1.15;
 }
-.reveal h1 { font-size: 64px; }
-.reveal h2 { font-size: 40px; }
-.reveal h3 { font-size: 28px; }
-.reveal h4 { font-size: 20px; }
+.reveal h1 { font-size: 56px; }
+.reveal h2 { font-size: 36px; }
+.reveal h3 { font-size: 26px; }
+.reveal h4 { font-size: 19px; }
 .reveal p  { margin: 0; line-height: 1.55; color: var(--text); }
 .reveal strong { color: var(--text); font-weight: 600; }
 .reveal em { color: var(--brand-light); font-style: normal; font-weight: 600; }
@@ -176,9 +179,11 @@ html, body {
 }
 .cover {
   display: grid;
-  grid-template-columns: 0.95fr 1.3fr;
+  grid-template-columns: 0.85fr 1.4fr;
   height: 100%;
   width: 100%;
+  overflow: hidden;
+  min-width: 0;
 }
 .cover-left {
   background: var(--bg);
@@ -205,12 +210,14 @@ html, body {
 }
 .cover-right {
   background: var(--bg);
-  padding: 70px 64px;
+  padding: 60px 56px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   position: relative;
   border-left: 4px solid var(--brand);
+  min-width: 0;
+  overflow: hidden;
 }
 .cover-right::before {
   content: '';
@@ -241,15 +248,16 @@ html, body {
 }
 
 .cover-right h1 {
-  font-size: 72px;
+  font-size: 54px;
   line-height: 1.05;
   margin-bottom: 22px;
+  word-break: break-word;
 }
 .lead {
-  font-size: 22px;
+  font-size: 20px;
   color: var(--text-soft);
-  margin-bottom: 42px;
-  max-width: 520px;
+  margin-bottom: 36px;
+  max-width: 100%;
 }
 
 .cover-meta {
@@ -719,12 +727,15 @@ html, body {
 }
 .closing {
   height: 100%;
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
-  padding: 80px 80px;
+  padding: 60px 70px;
   position: relative;
+  overflow: hidden;
+  box-sizing: border-box;
   background:
     radial-gradient(900px 600px at 90% 10%, rgba(196,98,45,.18) 0%, transparent 60%),
     radial-gradient(700px 500px at 10% 90%, rgba(255,200,87,.08) 0%, transparent 60%),
@@ -738,9 +749,10 @@ html, body {
   opacity: .85;
 }
 .closing-h1 {
-  font-size: 72px;
+  font-size: 58px;
   line-height: 1.05;
   margin-bottom: 18px;
+  word-break: break-word;
 }
 .closing-sub {
   font-size: 24px;
