@@ -8,502 +8,664 @@
   <meta name="theme-color" content="#0A0A0F">
   <meta property="og:title" content="INGOO — Plano de Crescimento Copa 2026">
   <meta property="og:description" content="Dois cenarios. Uma janela de 5 semanas.">
-  <meta property="og:image" content="brand/logo-ingoo-color.png">
+  <meta property="og:image" content="brand/logo-everywhere-color.png">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
-
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/reveal.css">
   <link rel="stylesheet" href="styles.css">
-
-  <link rel="icon" type="image/png" href="brand/logo-mark.png">
+  <link rel="icon" type="image/svg+xml" href="brand/logo-ingoo.svg">
 </head>
 <body>
-  <div class="reveal">
-    <div class="slides">
 
-      <!-- 1. CAPA -->
-      <section data-state="cover">
-        <div class="cover">
-          <div class="cover-left">
-            <img src="brand/logo-ingoo-color.png" alt="INGOO" class="cover-logo">
+  <!-- Header fixo de marca -->
+  <header class="brand-header">
+    <img src="brand/logo-ingoo.svg" alt="INGOO" class="brand-header-logo">
+    <div class="brand-divider"></div>
+    <span class="brand-text">Plano de Crescimento Copa 2026</span>
+  </header>
+
+  <!-- Navegacao -->
+  <nav class="deck-nav">
+    <button id="prevBtn" class="nav-btn" aria-label="Slide anterior">&larr;</button>
+    <div class="nav-counter"><span id="curSlide">1</span> / <span id="totSlide">17</span></div>
+    <button id="nextBtn" class="nav-btn" aria-label="Proximo slide">&rarr;</button>
+  </nav>
+
+  <!-- Indicador de progresso -->
+  <div class="progress-bar"><div id="progressFill" class="progress-fill"></div></div>
+
+  <main class="deck">
+
+    <!-- 1. CAPA -->
+    <section class="slide slide-cover" data-bg="cover">
+      <div class="cover-bg">
+        <img src="brand/produtos-lineup.png" alt="" class="cover-bg-img">
+        <div class="cover-bg-overlay"></div>
+      </div>
+      <div class="cover-content">
+        <div class="cover-logo-wrap">
+          <img src="brand/logo-everywhere-color.png" alt="INGOO EVERYWHERE" class="cover-logo">
+        </div>
+        <div class="eyebrow">Plano de Crescimento</div>
+        <h1 class="cover-title">
+          App Ingoo<br>
+          <span class="gradient-text">na Copa do Mundo 2026</span>
+        </h1>
+        <p class="cover-lead">Dois cenários. Uma janela de cinco semanas.</p>
+        <div class="cover-meta">
+          <div class="meta-item">
+            <span class="meta-label">Janela</span>
+            <span class="meta-value">01/jun – 19/jul</span>
+            <span class="meta-sub">Copa: 11/jun – 19/jul</span>
           </div>
-          <div class="cover-right">
-            <div class="eyebrow">Plano de Crescimento</div>
-            <h1>App Ingoo:<br><span class="gradient-text">Copa do Mundo 2026</span></h1>
-            <p class="lead">Dois cenarios. Uma janela de 5 semanas.</p>
-
-            <div class="cover-meta">
-              <div class="meta-item">
-                <span class="meta-label">Janela</span>
-                <span class="meta-value">01/jun – 19/jul</span>
-                <span class="meta-sub">Copa: 11/jun – 19/jul</span>
-              </div>
-              <div class="meta-item">
-                <span class="meta-label">Decisao</span>
-                <span class="meta-value">13/jun</span>
-                <span class="meta-sub">Pivot point A vs B</span>
-              </div>
-              <div class="meta-item">
-                <span class="meta-label">Investimento</span>
-                <span class="meta-value">R$ 145k – 215k</span>
-                <span class="meta-sub">Cenario A / Cenario B</span>
-              </div>
-            </div>
+          <div class="meta-item meta-item-highlight">
+            <span class="meta-label">Decisão</span>
+            <span class="meta-value">13/jun</span>
+            <span class="meta-sub">Pivot point A vs B</span>
+          </div>
+          <div class="meta-item">
+            <span class="meta-label">Investimento</span>
+            <span class="meta-value">R$ 145k – 215k</span>
+            <span class="meta-sub">Cenário A / Cenário B</span>
           </div>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <!-- 2. CONTEXTO -->
-      <section>
-        <div class="slide-header">
-          <div class="accent-bar"></div>
-          <div>
-            <h2>Contexto</h2>
-            <p class="sub">Por que a Copa muda o jogo — timing unico de 5 semanas.</p>
+    <!-- 2. CONTEXTO -->
+    <section class="slide" data-bg="ctx">
+      <div class="slide-bg">
+        <img src="brand/bar-scene.jpg" alt="" class="slide-bg-img bg-right">
+        <div class="slide-bg-fade fade-from-left"></div>
+      </div>
+      <div class="slide-inner">
+        <div class="slide-head">
+          <span class="kicker">01 — Contexto</span>
+          <h2>Por que a Copa <span class="gradient-text">muda o jogo</span></h2>
+          <p class="sub">Cinco semanas de tráfego concentrado nos pontos onde a Ingoo já está.</p>
+        </div>
+        <div class="grid g-4">
+          <div class="stat-card">
+            <div class="stat-num">3-5×</div>
+            <div class="stat-label">Tráfego em bares</div>
+            <div class="stat-sub">baseline em dia de Brasil</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-num">2h30</div>
+            <div class="stat-label">Tempo médio no bar</div>
+            <div class="stat-sub">vs 1h em dia normal</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-num">100%</div>
+            <div class="stat-label">Bateria crítica</div>
+            <div class="stat-sub">filmando, stories, grupo</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-num"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 12v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8M16 6l-4-4-4 4M12 2v13"/></svg></div>
+            <div class="stat-label">Compartilhamento</div>
+            <div class="stat-sub">stories já acontecem sozinhos</div>
           </div>
         </div>
-        <div class="grid grid-4">
-          <div class="card">
-            <div class="card-tag">Trafego em bares</div>
-            <div class="card-big">3-5x</div>
-            <div class="card-sub">baseline em dia de Brasil</div>
-          </div>
-          <div class="card">
-            <div class="card-tag">Tempo no bar</div>
-            <div class="card-big">2h30+</div>
-            <div class="card-sub">por jogo (vs 1h normal)</div>
-          </div>
-          <div class="card">
-            <div class="card-tag">Bateria critica</div>
-            <div class="card-big">100%</div>
-            <div class="card-sub">filmando, stories, grupo do Brasil</div>
-          </div>
-          <div class="card">
-            <div class="card-tag">Compartilhamento</div>
-            <div class="card-big">Organico</div>
-            <div class="card-sub">stories ja acontecem sozinhos</div>
-          </div>
-        </div>
-
         <div class="quote-card">
           <div class="quote-tag">PREMISSA CENTRAL</div>
-          <p>Cada uma dessas variaveis amplifica o City Hunt. Mas a base de crescimento <strong>nao depende</strong> do Hunt sair: adesivos, ASO, parcerias, paid, referral e embaixadores presenciais geram aquisicao em qualquer cenario.</p>
-          <p class="highlight">A Copa e a janela. O Hunt e o turbo.</p>
+          <p>Cada uma dessas variáveis amplifica o City Hunt. Mas a base de crescimento <strong>não depende</strong> do Hunt sair: adesivos, ASO, parcerias, paid, referral e embaixadores geram aquisição em qualquer cenário.</p>
+          <p class="highlight">A Copa é a janela. O Hunt é o turbo.</p>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <!-- 3. DOIS CENARIOS -->
-      <section>
-        <div class="slide-header">
-          <div class="accent-bar"></div>
-          <div>
-            <h2>Dois cenarios</h2>
-            <p class="sub">Decisao binaria em 13/jun. Sem flexibilidade.</p>
-          </div>
+    <!-- 3. DOIS CENARIOS -->
+    <section class="slide" data-bg="dark">
+      <div class="slide-inner">
+        <div class="slide-head">
+          <span class="kicker">02 — Caminhos</span>
+          <h2>Dois cenários. <span class="gradient-text">Uma decisão.</span></h2>
+          <p class="sub">Pivot binário em 13 de junho — sem flexibilidade.</p>
         </div>
-        <div class="grid grid-2">
+        <div class="grid g-2">
           <div class="scenario scenario-a">
-            <div class="pill pill-brand">CENARIO A</div>
+            <div class="pill pill-brand">CENÁRIO A</div>
             <h3>City Hunt na Copa</h3>
-            <p class="scenario-sub">Hunt em prod ate 25-28/jun</p>
+            <p class="scenario-sub">Hunt em produção até 25-28/jun</p>
             <ul class="scenario-list">
               <li><span>Motor</span><strong>Viral via Hunt + Charge Success</strong></li>
-              <li><span>Mecanicas</span><strong>Bau-do-Jogo, Bau-do-Gol, Bar Ranking</strong></li>
+              <li><span>Mecânicas</span><strong>Baú-do-Jogo, Baú-do-Gol, Bar Ranking</strong></li>
               <li><span>Downloads</span><strong>150k+ em 90 dias</strong></li>
               <li><span>CAC</span><strong>~R$ 1,00</strong></li>
               <li><span>Investimento</span><strong>R$ 145k</strong></li>
             </ul>
           </div>
           <div class="scenario scenario-b">
-            <div class="pill pill-muted">CENARIO B</div>
+            <div class="pill pill-muted">CENÁRIO B</div>
             <h3>Sem Hunt na Copa</h3>
             <p class="scenario-sub">Wallet + Cupom + paid agressivo</p>
             <ul class="scenario-list">
-              <li><span>Motor</span><strong>Midia paga + referral + Wallet</strong></li>
-              <li><span>Mecanicas</span><strong>Cupom-do-Jogo, Aluguel-no-Gol</strong></li>
+              <li><span>Motor</span><strong>Mídia paga + referral + Wallet</strong></li>
+              <li><span>Mecânicas</span><strong>Cupom-do-Jogo, Aluguel-no-Gol</strong></li>
               <li><span>Downloads</span><strong>80k em 90 dias</strong></li>
               <li><span>CAC</span><strong>~R$ 2,70</strong></li>
               <li><span>Investimento</span><strong>R$ 215k</strong></li>
             </ul>
           </div>
         </div>
-        <p class="footnote">Custo de nao entregar o Hunt: +R$ 70k em paid e -70k downloads. Nao e so feature atrasada — e a diferenca entre <em>plataforma</em> e <em>utilitario</em>.</p>
-      </section>
+        <p class="footnote">Custo de não entregar o Hunt: +R$ 70k em paid e –70k downloads. É a diferença entre <em>plataforma</em> e <em>utilitário</em>.</p>
+      </div>
+    </section>
 
-      <!-- 4. PIVOT POINT -->
-      <section>
-        <div class="slide-header">
-          <div class="accent-bar"></div>
-          <div>
-            <h2>Pivot point: 13 de junho</h2>
-            <p class="sub">3 milestones binarios. 2 atrasados = vai pra B sem discussao.</p>
-          </div>
+    <!-- 4. PIVOT -->
+    <section class="slide" data-bg="dark">
+      <div class="slide-bg">
+        <img src="brand/maquina-riocentro.png" alt="" class="slide-bg-img bg-right">
+        <div class="slide-bg-fade fade-from-left"></div>
+      </div>
+      <div class="slide-inner">
+        <div class="slide-head">
+          <span class="kicker">03 — Pivot point</span>
+          <h2>13 de junho. <span class="gradient-text">Três milestones binários.</span></h2>
+          <p class="sub">2 atrasados = vai pra Cenário B sem discussão.</p>
         </div>
         <div class="milestones">
           <div class="milestone">
             <div class="milestone-num">01</div>
-            <div class="milestone-content">
-              <h4>Backend Hunt funcional ponta-a-ponta em staging</h4>
-              <p>Mapa, scan, abertura, sorteio, cupom emitido.</p>
+            <div>
+              <h4>Backend Hunt funcional ponta-a-ponta</h4>
+              <p>Mapa, scan, abertura, sorteio, cupom emitido — em staging.</p>
             </div>
           </div>
           <div class="milestone">
             <div class="milestone-num">02</div>
-            <div class="milestone-content">
+            <div>
               <h4>Build mobile em TestFlight</h4>
               <p>iOS e Android com fluxo completo testado pelo time.</p>
             </div>
           </div>
           <div class="milestone">
             <div class="milestone-num">03</div>
-            <div class="milestone-content">
-              <h4>Painel comerciante validando 1 bau em ambiente real</h4>
-              <p>Garcom escaneia QR do usuario e marca como usado.</p>
+            <div>
+              <h4>Painel comerciante validando 1 baú</h4>
+              <p>Garçom escaneia QR do usuário e marca como usado, em ambiente real.</p>
             </div>
           </div>
         </div>
-        <p class="footnote">Apostar num MVP mal feito durante a Copa destroi mais valor do que entregar tarde.</p>
-      </section>
+        <p class="footnote">Apostar num MVP mal feito durante a Copa destrói mais valor do que entregar tarde.</p>
+      </div>
+    </section>
 
-      <!-- 5. BASE COMUM 1/2 -->
-      <section>
-        <div class="slide-header">
-          <div class="accent-bar"></div>
-          <div>
-            <h2>Base comum <span class="page-tag">1/2</span></h2>
-            <p class="sub">Rola nos dois cenarios. Comeca AGORA. ROI positivo independente do Hunt.</p>
+    <!-- 5. BASE COMUM 1/2 -->
+    <section class="slide" data-bg="dark">
+      <div class="slide-inner">
+        <div class="slide-head">
+          <span class="kicker">04 — Base comum <span class="page-tag">1/2</span></span>
+          <h2>Começa <span class="gradient-text">agora.</span></h2>
+          <p class="sub">ROI positivo independente do Hunt. Rola nos dois cenários.</p>
+        </div>
+        <div class="grid g-2">
+          <div class="action-card">
+            <div class="action-num">A1</div>
+            <div>
+              <h4>Adesivos Copa nas 30 máquinas-âncora</h4>
+              <p>RJ/SP/BH. "Cerveja + Brasil jogando + bateria cheia. Baixe o Ingoo." Custo marginal: impressão.</p>
+            </div>
+          </div>
+          <div class="action-card">
+            <div class="action-num">A2</div>
+            <div>
+              <h4>Lock screen do power bank</h4>
+              <p>Banner rotativo "Jogo do Brasil hoje — Ingoo no bar mais próximo".</p>
+            </div>
+          </div>
+          <div class="action-card">
+            <div class="action-num">A3</div>
+            <div>
+              <h4>ASO + creatives Copa</h4>
+              <p>Título: "Ingoo — Power Bank pra Copa". Screenshots: bar com TV. Vídeo de 15s pra stores.</p>
+            </div>
+          </div>
+          <div class="action-card">
+            <div class="action-num">A4</div>
+            <div>
+              <h4>Parcerias-âncora</h4>
+              <p>Brahma (cupom de chopp), TIM (dados patrocinados), GL Events (Fan Zones).</p>
+            </div>
           </div>
         </div>
-        <div class="grid grid-2">
-          <div class="card-action">
-            <h4>Adesivos Copa nas 30 maquinas-ancora</h4>
-            <p>RJ/SP/BH. Texto: "Cerveja + Brasil jogando + bateria cheia. Baixe o Ingoo." Custo marginal: impressao.</p>
-          </div>
-          <div class="card-action">
-            <h4>Lock screen do power bank</h4>
-            <p>Banner rotativo "Jogo do Brasil hoje — Ingoo no bar mais proximo".</p>
-          </div>
-          <div class="card-action">
-            <h4>ASO + creatives Copa</h4>
-            <p>Titulo: "Ingoo — Power Bank pra Copa". Screenshots novas com bar e TV. Video 15s pra stores.</p>
-          </div>
-          <div class="card-action">
-            <h4>Parcerias-ancora</h4>
-            <p>Brahma (cupom de chopp), TIM (dados patrocinados), GL Events (Fan Zones).</p>
-          </div>
-        </div>
-      </section>
+      </div>
+    </section>
 
-      <!-- 6. BASE COMUM 2/2 -->
-      <section>
-        <div class="slide-header">
-          <div class="accent-bar"></div>
-          <div>
-            <h2>Base comum <span class="page-tag">2/2</span></h2>
-            <p class="sub">Midia, conteudo organico, referral e operacao.</p>
-          </div>
+    <!-- 6. BASE COMUM 2/2 -->
+    <section class="slide" data-bg="dark">
+      <div class="slide-inner">
+        <div class="slide-head">
+          <span class="kicker">04 — Base comum <span class="page-tag">2/2</span></span>
+          <h2>Mídia, conteúdo, <span class="gradient-text">referral, operação.</span></h2>
         </div>
-        <div class="grid grid-3">
-          <div class="card-action">
-            <h4>Midia paga focada em conversao</h4>
-            <p>Meta + Google UAC + TikTok com geo-targeting. Jun-Jul: R$ 90k (A) / R$ 150k (B).</p>
+        <div class="grid g-3">
+          <div class="action-card-sm">
+            <h4>Mídia paga</h4>
+            <p>Meta + Google UAC + TikTok com geo-targeting. Jun-Jul: <strong>R$ 90k (A)</strong> / R$ 150k (B).</p>
           </div>
-          <div class="card-action">
-            <h4>15 creators locais (5/cidade)</h4>
-            <p>Conteudo nativo: bar, jogo, Ingoo, comemoracao. R$ 30k total.</p>
+          <div class="action-card-sm">
+            <h4>15 creators locais</h4>
+            <p>5 por cidade. Conteúdo nativo: bar, jogo, Ingoo, comemoração. <strong>R$ 30k</strong> total.</p>
           </div>
-          <div class="card-action">
-            <h4>Indique e Ganhe 2x</h4>
-            <p>Indique = 1 aluguel gratis (60min). Indicado = 30min. CAC marginal: R$ 3-5.</p>
+          <div class="action-card-sm">
+            <h4>Indique e Ganhe 2×</h4>
+            <p>Indique = aluguel grátis 60min. Indicado = 30min. <strong>CAC marginal R$ 3-5.</strong></p>
           </div>
-          <div class="card-action">
+          <div class="action-card-sm">
             <h4>Embaixadores presenciais</h4>
-            <p>10 bares-ancora x dias de Brasil x R$ 200. Converte na hora.</p>
+            <p>10 bares-âncora × dias de Brasil × R$ 200. Converte na hora.</p>
           </div>
-          <div class="card-action">
-            <h4>Operacao 2x na frota</h4>
-            <p>Reposicao dobrada nos top 30 bares em dias de Brasil.</p>
+          <div class="action-card-sm">
+            <h4>Operação 2× na frota</h4>
+            <p>Reposição dobrada nos top 30 bares em dias de Brasil.</p>
           </div>
-          <div class="card-action">
-            <h4>Conteudo organico Ingoo</h4>
-            <p>@ingooapp: 1 post/dia Insta + TikTok durante toda Copa.</p>
+          <div class="action-card-sm">
+            <h4>Conteúdo orgânico</h4>
+            <p>@ingooapp: 1 post/dia Instagram + TikTok durante toda a Copa.</p>
           </div>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <!-- 7. CENARIO A - TESE -->
-      <section>
-        <div class="slide-header">
-          <div class="accent-bar"></div>
-          <div>
-            <h2>Cenario A <span class="page-tag">com Hunt</span></h2>
-            <p class="sub">Hunt vira o motor viral. Charge Success = cold start de 60% dos novos.</p>
-          </div>
+    <!-- 7. CENARIO A -->
+    <section class="slide" data-bg="dark">
+      <div class="slide-bg">
+        <img src="brand/app-screen.png" alt="" class="slide-bg-img bg-right bg-app">
+      </div>
+      <div class="slide-inner narrow">
+        <div class="slide-head">
+          <span class="kicker">05 — Cenário A</span>
+          <h2>Com Hunt: <span class="gradient-text">o motor viral.</span></h2>
+          <p class="sub">Charge Success vira cold-start de 60% dos novos usuários.</p>
         </div>
-        <div class="grid grid-2-asym">
+        <div class="grid g-2 g-asym">
           <div class="scenario scenario-a">
             <div class="pill pill-brand">TESE</div>
             <p class="thesis">
-              Hunt vira o <strong>motor principal</strong> de aquisicao e viralizacao durante a Copa.<br><br>
-              Charge Success com card Hunt = <strong>cold-start de todos</strong> que alugam power bank.<br><br>
-              Convite "me ajude a abrir esse bau" = K-factor &gt; 0,5.<br><br>
-              Push de gol = reabertura. DAU 5x em dia de Brasil.
+              Hunt vira o <strong>motor principal</strong> de aquisição e viralização.<br><br>
+              Convite "me ajude a abrir esse baú" — <strong>K-factor &gt; 0,5</strong>.<br><br>
+              Push de gol = reabertura em tempo real. <strong>DAU 5× em dia de Brasil.</strong>
             </p>
           </div>
-          <div class="card-list">
-            <div class="card-list-title">MECANICAS EXCLUSIVAS</div>
-            <div class="mech"><strong>Bau-do-Jogo</strong><span>Destrava 15min antes do apito do Brasil, fecha no 2T.</span></div>
-            <div class="mech"><strong>Bau-do-Gol</strong><span>Cada gol = push em massa, bau valido 30min nos bares proximos.</span></div>
-            <div class="mech"><strong>Pool de palpites</strong><span>Antes do jogo, usuario escolhe placar. Acertou = sorteio.</span></div>
-            <div class="mech"><strong>Bar Ranking Copa</strong><span>Bares com mais baus abertos. Top 3 = trofeu + post.</span></div>
-            <div class="mech"><strong>Final Hunt</strong><span>Megaevento 19/jul: iPhone, Apple Watch, ingresso amistoso.</span></div>
+          <div class="mech-list">
+            <div class="mech-list-title">MECÂNICAS EXCLUSIVAS</div>
+            <div class="mech"><strong>Baú-do-Jogo</strong><span>Destrava 15min antes do apito, fecha no 2T.</span></div>
+            <div class="mech"><strong>Baú-do-Gol</strong><span>Cada gol = push em massa, baú válido 30min nos bares próximos.</span></div>
+            <div class="mech"><strong>Pool de palpites</strong><span>Antes do jogo, usuário escolhe placar. Acertou = sorteio.</span></div>
+            <div class="mech"><strong>Bar Ranking</strong><span>Bares com mais baús abertos. Top 3 = troféu + post.</span></div>
+            <div class="mech"><strong>Final Hunt</strong><span>19/jul: iPhone, Apple Watch, ingresso amistoso.</span></div>
           </div>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <!-- 8. CENARIO A - KPIs -->
-      <section>
-        <div class="slide-header">
-          <div class="accent-bar"></div>
-          <div>
-            <h2>Cenario A — KPIs e investimento</h2>
-            <p class="sub">Meta 90 dias. Total R$ 145k.</p>
-          </div>
+    <!-- 8. CENARIO A - KPIs -->
+    <section class="slide" data-bg="dark">
+      <div class="slide-inner">
+        <div class="slide-head">
+          <span class="kicker">05 — Cenário A — KPIs</span>
+          <h2>Meta 90 dias. <span class="gradient-text">R$ 145k.</span></h2>
         </div>
-        <div class="grid grid-3 kpi-grid">
-          <div class="kpi kpi-a"><div class="kpi-num">150k+</div><div class="kpi-label">Novos downloads</div><div class="kpi-sub">vs ~30k/mes baseline</div></div>
+        <div class="grid g-3 kpi-grid">
+          <div class="kpi kpi-a"><div class="kpi-num">150k+</div><div class="kpi-label">Novos downloads</div><div class="kpi-sub">vs ~30k/mês baseline</div></div>
           <div class="kpi kpi-a"><div class="kpi-num">300k</div><div class="kpi-label">MAU</div><div class="kpi-sub">vs ~80k hoje</div></div>
           <div class="kpi kpi-a"><div class="kpi-num">25%</div><div class="kpi-label">DAU / MAU</div><div class="kpi-sub">vs ~12% hoje</div></div>
           <div class="kpi kpi-a"><div class="kpi-num">0,5</div><div class="kpi-label">K-factor</div><div class="kpi-sub">vs ~0,05 baseline</div></div>
           <div class="kpi kpi-a"><div class="kpi-num">R$ 1,00</div><div class="kpi-label">CAC blended</div><div class="kpi-sub">queda de 50%+</div></div>
-          <div class="kpi kpi-a"><div class="kpi-num">+10pp</div><div class="kpi-label">Locacao paga</div><div class="kpi-sub">% MAU que aluga</div></div>
+          <div class="kpi kpi-a"><div class="kpi-num">+10pp</div><div class="kpi-label">Locação paga</div><div class="kpi-sub">% MAU que aluga</div></div>
         </div>
         <div class="invest-bar invest-a">
           <div class="invest-title">INVESTIMENTO A: R$ 145k</div>
-          <div class="invest-detail">Midia paga R$ 90k &nbsp;·&nbsp; Creators R$ 30k &nbsp;·&nbsp; Embaixadores R$ 10k &nbsp;·&nbsp; Material fisico R$ 15k<br>Brahma e marcas: R$ 0 cash (premios fornecidos). Dev: ja alocado.</div>
+          <div class="invest-detail">Mídia paga R$ 90k &nbsp;·&nbsp; Creators R$ 30k &nbsp;·&nbsp; Embaixadores R$ 10k &nbsp;·&nbsp; Material físico R$ 15k<br><span class="dim">Brahma e marcas: R$ 0 cash (prêmios fornecidos). Dev: já alocado.</span></div>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <!-- 9. CENARIO B - TESE -->
-      <section>
-        <div class="slide-header">
-          <div class="accent-bar"></div>
-          <div>
-            <h2>Cenario B <span class="page-tag">sem Hunt</span></h2>
-            <p class="sub">App segue como ferramenta de aluguel. Crescimento por midia paga + referral + Wallet simples.</p>
-          </div>
+    <!-- 9. CENARIO B -->
+    <section class="slide" data-bg="dark">
+      <div class="slide-bg">
+        <img src="brand/vending-machine.png" alt="" class="slide-bg-img bg-right bg-machine">
+      </div>
+      <div class="slide-inner narrow">
+        <div class="slide-head">
+          <span class="kicker">06 — Cenário B</span>
+          <h2>Sem Hunt: <span class="gradient-text">aquisição clássica.</span></h2>
+          <p class="sub">App segue como ferramenta de aluguel. Crescimento por mídia paga, referral e Wallet simples.</p>
         </div>
-        <div class="grid grid-2-asym">
+        <div class="grid g-2 g-asym">
           <div class="scenario scenario-b">
             <div class="pill pill-muted">TESE</div>
             <p class="thesis">
-              Sem Hunt, foco em transformar a Copa em <strong>boost de aquisicao classico</strong>.<br><br>
+              Sem Hunt, foco em transformar a Copa em <strong>boost de aquisição clássico</strong>.<br><br>
               1. Convencer gente a baixar antes de precisar.<br><br>
               2. Maximizar referral entre amigos no mesmo bar.<br><br>
-              3. Antecipar "Wallet de cupons" (~5 dias dev) como diferenciacao.
+              3. Antecipar "Wallet de cupons" (~5 dias dev) como diferenciação.
             </p>
           </div>
-          <div class="card-list">
-            <div class="card-list-title">MECANICAS ALTERNATIVAS</div>
-            <div class="mech"><strong>Cupom-do-Jogo</strong><span>Cada aluguel em dia de Brasil = cupom aleatorio na Wallet.</span></div>
-            <div class="mech"><strong>Aluguel-no-Gol</strong><span>Cada gol = aluguel gratis nos top 30 bares por 15min.</span></div>
-            <div class="mech"><strong>Pool de palpites simples</strong><span>Acertou placar = cupom Ingoo. Sem amarracao com bau.</span></div>
-            <div class="mech"><strong>Bar do Mes</strong><span>Ranking de alugueis. Top 3 = post + premiacao.</span></div>
-            <div class="mech"><strong>Referral 2x reforcado</strong><span>Indique 2 amigos = 1 dia inteiro de aluguel gratis.</span></div>
+          <div class="mech-list">
+            <div class="mech-list-title">MECÂNICAS ALTERNATIVAS</div>
+            <div class="mech"><strong>Cupom-do-Jogo</strong><span>Cada aluguel em dia de Brasil = cupom aleatório na Wallet.</span></div>
+            <div class="mech"><strong>Aluguel-no-Gol</strong><span>Cada gol = aluguel grátis nos top 30 bares por 15min.</span></div>
+            <div class="mech"><strong>Pool de palpites simples</strong><span>Acertou placar = cupom Ingoo.</span></div>
+            <div class="mech"><strong>Bar do Mês</strong><span>Ranking de aluguéis. Top 3 = post + premiação.</span></div>
+            <div class="mech"><strong>Referral 2× reforçado</strong><span>Indique 2 amigos = 1 dia inteiro grátis.</span></div>
           </div>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <!-- 10. CENARIO B - KPIs -->
-      <section>
-        <div class="slide-header">
-          <div class="accent-bar"></div>
-          <div>
-            <h2>Cenario B — KPIs e investimento</h2>
-            <p class="sub">Meta 90 dias. Total R$ 215k.</p>
-          </div>
+    <!-- 10. CENARIO B - KPIs -->
+    <section class="slide" data-bg="dark">
+      <div class="slide-inner">
+        <div class="slide-head">
+          <span class="kicker">06 — Cenário B — KPIs</span>
+          <h2>Meta 90 dias. <span class="text-muted">R$ 215k.</span></h2>
         </div>
-        <div class="grid grid-3 kpi-grid">
+        <div class="grid g-3 kpi-grid">
           <div class="kpi kpi-b"><div class="kpi-num">80k</div><div class="kpi-label">Novos downloads</div><div class="kpi-sub">vs 150k no A</div></div>
           <div class="kpi kpi-b"><div class="kpi-num">150k</div><div class="kpi-label">MAU</div><div class="kpi-sub">vs 300k no A</div></div>
           <div class="kpi kpi-b"><div class="kpi-num">18%</div><div class="kpi-label">DAU / MAU</div><div class="kpi-sub">vs 25% no A</div></div>
           <div class="kpi kpi-b"><div class="kpi-num">0,15</div><div class="kpi-label">K-factor</div><div class="kpi-sub">vs 0,5 no A</div></div>
           <div class="kpi kpi-b"><div class="kpi-num">R$ 2,70</div><div class="kpi-label">CAC blended</div><div class="kpi-sub">vs R$ 1,00 no A</div></div>
-          <div class="kpi kpi-b"><div class="kpi-num">+4pp</div><div class="kpi-label">Locacao paga</div><div class="kpi-sub">vs +10pp no A</div></div>
+          <div class="kpi kpi-b"><div class="kpi-num">+4pp</div><div class="kpi-label">Locação paga</div><div class="kpi-sub">vs +10pp no A</div></div>
         </div>
         <div class="invest-bar invest-b">
           <div class="invest-title">INVESTIMENTO B: R$ 215k <small>(+R$ 70k vs A)</small></div>
-          <div class="invest-detail">Midia paga R$ 150k &nbsp;·&nbsp; Creators R$ 30k &nbsp;·&nbsp; Embaixadores R$ 20k (20 bares) &nbsp;·&nbsp; Material R$ 15k<br>Dev Wallet+Cupom: ~5 dias absorvido. Brahma e marcas: R$ 0 cash.</div>
+          <div class="invest-detail">Mídia paga R$ 150k &nbsp;·&nbsp; Creators R$ 30k &nbsp;·&nbsp; Embaixadores R$ 20k &nbsp;·&nbsp; Material R$ 15k<br><span class="dim">Dev Wallet+Cupom: ~5 dias absorvido. Brahma e marcas: R$ 0 cash.</span></div>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <!-- 11. COMPARATIVO -->
-      <section>
-        <div class="slide-header">
-          <div class="accent-bar"></div>
-          <div>
-            <h2>Comparativo direto</h2>
-            <p class="sub">A custa menos e entrega quase 2x mais downloads.</p>
-          </div>
+    <!-- 11. COMPARATIVO -->
+    <section class="slide" data-bg="dark">
+      <div class="slide-inner">
+        <div class="slide-head">
+          <span class="kicker">07 — Comparativo</span>
+          <h2>A entrega <span class="gradient-text">2× mais</span>, custando menos.</h2>
         </div>
-        <table class="compare">
-          <thead>
-            <tr><th>Variavel</th><th class="th-a">Cenario A</th><th class="th-b">Cenario B</th></tr>
-          </thead>
-          <tbody>
-            <tr><td>Investimento total</td><td class="td-a">R$ 145k</td><td>R$ 215k</td></tr>
-            <tr><td>Downloads novos (90d)</td><td class="td-a">150k+</td><td>80k</td></tr>
-            <tr><td>MAU (90d)</td><td class="td-a">300k</td><td>150k</td></tr>
-            <tr><td>CAC blended</td><td class="td-a">R$ 1,00</td><td>R$ 2,70</td></tr>
-            <tr><td>K-factor</td><td class="td-a">0,5</td><td>0,15</td></tr>
-            <tr><td>Marca pos-Copa</td><td class="td-a">Plataforma de cidade</td><td>Power bank com cupom</td></tr>
-            <tr><td>Risco principal</td><td class="td-a">Bug em dia de Brasil</td><td>Crescimento menor</td></tr>
-          </tbody>
-        </table>
-        <p class="footnote">A nao e so "melhor" — e <strong>categorialmente diferente</strong>. Mudanca de posicionamento de marca pos-Copa.</p>
-      </section>
+        <div class="compare-wrap">
+          <table class="compare">
+            <thead>
+              <tr><th>Variável</th><th class="th-a">Cenário A</th><th class="th-b">Cenário B</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>Investimento total</td><td class="td-a">R$ 145k</td><td>R$ 215k</td></tr>
+              <tr><td>Downloads novos (90d)</td><td class="td-a">150k+</td><td>80k</td></tr>
+              <tr><td>MAU (90d)</td><td class="td-a">300k</td><td>150k</td></tr>
+              <tr><td>CAC blended</td><td class="td-a">R$ 1,00</td><td>R$ 2,70</td></tr>
+              <tr><td>K-factor</td><td class="td-a">0,5</td><td>0,15</td></tr>
+              <tr><td>Marca pós-Copa</td><td class="td-a">Plataforma de cidade</td><td>Power bank com cupom</td></tr>
+              <tr><td>Risco principal</td><td class="td-a">Bug em dia de Brasil</td><td>Crescimento menor</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="footnote">A não é só "melhor" — é <strong>categorialmente diferente</strong>. Mudança de posicionamento de marca pós-Copa.</p>
+      </div>
+    </section>
 
-      <!-- 12. RECOMENDACAO -->
-      <section>
-        <div class="slide-header">
-          <div class="accent-bar"></div>
-          <div>
-            <h2>Recomendacao estrategica</h2>
-            <p class="sub">Mira em A. B como rede de seguranca.</p>
-          </div>
+    <!-- 12. RECOMENDACAO -->
+    <section class="slide" data-bg="dark">
+      <div class="slide-inner">
+        <div class="slide-head">
+          <span class="kicker">08 — Recomendação</span>
+          <h2>Mira em A. <span class="gradient-text">B como rede de segurança.</span></h2>
         </div>
         <div class="recs">
-          <div class="rec"><div class="rec-num">01</div><div><h4>Mira em Cenario A como alvo principal</h4><p>Mas com B preparado em paralelo desde dia 1.</p></div></div>
-          <div class="rec"><div class="rec-num">02</div><div><h4>Decisao A vs B = 13/jun</h4><p>Sem flexibilidade. 2 milestones atrasados = vai pra B.</p></div></div>
-          <div class="rec"><div class="rec-num">03</div><div><h4>Base comum nao espera decisao</h4><p>Adesivo, ASO, Brahma, paid, referral, creators — todos comecam essa semana.</p></div></div>
-          <div class="rec"><div class="rec-num">04</div><div><h4>Dev Wallet+Cupom simplificada em paralelo</h4><p>~5 dias dev. Vira feature util pos-Copa mesmo se A der certo.</p></div></div>
-          <div class="rec"><div class="rec-num">05</div><div><h4>Comerciantes-ancora servem aos dois cenarios</h4><p>Negociar 30 bares agora. Nunca e desperdicio.</p></div></div>
+          <div class="rec"><div class="rec-num">01</div><div><h4>Mira no Cenário A como alvo principal</h4><p>Mas com B preparado em paralelo desde dia 1.</p></div></div>
+          <div class="rec"><div class="rec-num">02</div><div><h4>Decisão A vs B = 13/jun</h4><p>Sem flexibilidade. 2 milestones atrasados = vai pra B.</p></div></div>
+          <div class="rec"><div class="rec-num">03</div><div><h4>Base comum não espera decisão</h4><p>Adesivo, ASO, Brahma, paid, referral, creators — todos começam essa semana.</p></div></div>
+          <div class="rec"><div class="rec-num">04</div><div><h4>Dev Wallet+Cupom em paralelo</h4><p>~5 dias dev. Vira feature útil pós-Copa mesmo se A der certo.</p></div></div>
+          <div class="rec"><div class="rec-num">05</div><div><h4>Comerciantes-âncora servem aos dois</h4><p>Negociar 30 bares agora. Nunca é desperdício.</p></div></div>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <!-- 13. CRONOGRAMA -->
-      <section>
-        <div class="slide-header">
-          <div class="accent-bar"></div>
-          <div>
-            <h2>Cronograma combinado</h2>
-            <p class="sub">Trilha A e B rodando em paralelo ate o pivot.</p>
-          </div>
+    <!-- 13. CRONOGRAMA -->
+    <section class="slide" data-bg="dark">
+      <div class="slide-inner">
+        <div class="slide-head">
+          <span class="kicker">09 — Cronograma</span>
+          <h2>Trilha A e B <span class="gradient-text">em paralelo</span> até o pivot.</h2>
         </div>
         <div class="timeline">
-          <div class="t-row"><div class="t-date">01-07/jun</div><div class="t-pill t-base">Base</div><div class="t-desc">Adesivos, ASO, contato Brahma, recrutar creators, Meta Ads, ativar referral 2x.</div></div>
-          <div class="t-row"><div class="t-date">08-14/jun</div><div class="t-pill t-base">Base + Dev</div><div class="t-desc">Embaixadores, conteudo daily, expansao. Dev Hunt + TestFlight. Wallet simples em paralelo.</div></div>
-          <div class="t-row t-pivot"><div class="t-date">13/jun</div><div class="t-pill t-red">PIVOT</div><div class="t-desc">Decisao A vs B baseada em 3 milestones.</div></div>
-          <div class="t-row"><div class="t-date">15-21/jun</div><div class="t-pill t-base">Soft launch</div><div class="t-desc">A: Hunt em 3 bares teste. B: Wallet em 10 bares.</div></div>
-          <div class="t-row"><div class="t-date">22-28/jun</div><div class="t-pill t-base">Launch publico</div><div class="t-desc">A: Hunt em 30 bares-ancora. B: Wallet em 30 bares.</div></div>
-          <div class="t-row"><div class="t-date">29/jun-19/jul</div><div class="t-pill t-base">Copa</div><div class="t-desc">A: Bau-do-Jogo, Final Hunt. B: Cupom-do-Jogo, Aluguel-no-Gol.</div></div>
-          <div class="t-row"><div class="t-date">20/jul-31/ago</div><div class="t-pill t-base">Pos-Copa</div><div class="t-desc">Analise de retencao. Hunt vira recorrencia semanal (A) ou entra em prod (B).</div></div>
+          <div class="t-row"><div class="t-date">01-07/jun</div><div class="t-pill t-base">Base</div><div class="t-desc">Adesivos, ASO, contato Brahma, recrutar creators, Meta Ads, ativar referral 2×.</div></div>
+          <div class="t-row"><div class="t-date">08-14/jun</div><div class="t-pill t-base">Base + Dev</div><div class="t-desc">Embaixadores, conteúdo daily. Dev Hunt + TestFlight. Wallet simples em paralelo.</div></div>
+          <div class="t-row t-pivot"><div class="t-date">13/jun</div><div class="t-pill t-red">PIVOT</div><div class="t-desc">Decisão A vs B baseada em 3 milestones.</div></div>
+          <div class="t-row"><div class="t-date">15-21/jun</div><div class="t-pill t-base">Soft launch</div><div class="t-desc">A: Hunt em 3 bares. B: Wallet em 10 bares.</div></div>
+          <div class="t-row"><div class="t-date">22-28/jun</div><div class="t-pill t-base">Launch público</div><div class="t-desc">A: Hunt em 30 bares-âncora. B: Wallet em 30 bares.</div></div>
+          <div class="t-row"><div class="t-date">29/jun-19/jul</div><div class="t-pill t-base">Copa</div><div class="t-desc">A: Baú-do-Jogo, Final Hunt. B: Cupom-do-Jogo, Aluguel-no-Gol.</div></div>
+          <div class="t-row"><div class="t-date">20/jul-31/ago</div><div class="t-pill t-base">Pós-Copa</div><div class="t-desc">Retenção. Hunt vira recorrência semanal (A) ou entra em prod (B).</div></div>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <!-- 14. OWNERS -->
-      <section>
-        <div class="slide-header">
-          <div class="accent-bar"></div>
-          <div>
-            <h2>Owners por frente</h2>
-            <p class="sub">Cada quadrado tem dono. Sem dono, nao acontece.</p>
-          </div>
+    <!-- 14. OWNERS -->
+    <section class="slide" data-bg="dark">
+      <div class="slide-inner">
+        <div class="slide-head">
+          <span class="kicker">10 — Owners</span>
+          <h2>Cada frente <span class="gradient-text">tem dono.</span></h2>
+          <p class="sub">Sem dono, não acontece.</p>
         </div>
-        <div class="grid grid-2">
-          <div class="owner-card"><span>DECISAO A VS B</span><strong>Diogo (CEO)</strong></div>
-          <div class="owner-card"><span>OPERACAO BARES + EMBAIXADORES</span><strong>Ana Carolina</strong></div>
-          <div class="owner-card"><span>DEV HUNT + WALLET FALLBACK</span><strong>Time F3X dev</strong></div>
+        <div class="grid g-2 owners-grid">
+          <div class="owner-card owner-card-key"><span>DECISÃO A VS B</span><strong>Diogo Archanjo</strong><small>CEO</small></div>
+          <div class="owner-card"><span>OPERAÇÃO BARES + EMBAIXADORES</span><strong>Ana Carolina</strong><small>Gerente Geral</small></div>
+          <div class="owner-card"><span>DEV HUNT + WALLET</span><strong>Time F3X dev</strong></div>
           <div class="owner-card"><span>PARCERIAS (BRAHMA, TIM, GL)</span><strong>Diogo + Ana</strong></div>
-          <div class="owner-card"><span>MIDIA PAGA</span><strong>F3X marketing</strong></div>
-          <div class="owner-card"><span>CONTEUDO + CREATORS</span><strong>F3X marketing</strong></div>
+          <div class="owner-card"><span>MÍDIA PAGA</span><strong>F3X marketing</strong></div>
+          <div class="owner-card"><span>CONTEÚDO + CREATORS</span><strong>F3X marketing</strong></div>
           <div class="owner-card"><span>FINANCEIRO (R$ 145-215K)</span><strong>Rafaela Neris</strong></div>
-          <div class="owner-card"><span>DASHBOARD DE OPERACAO COPA</span><strong>F3X dev</strong></div>
+          <div class="owner-card"><span>DASHBOARD DE OPERAÇÃO COPA</span><strong>F3X dev</strong></div>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <!-- 15. RISCOS -->
-      <section>
-        <div class="slide-header">
-          <div class="accent-bar"></div>
-          <div>
-            <h2>Riscos transversais</h2>
-            <p class="sub">Cada um com mitigacao definida.</p>
-          </div>
+    <!-- 15. RISCOS -->
+    <section class="slide" data-bg="dark">
+      <div class="slide-inner">
+        <div class="slide-head">
+          <span class="kicker">11 — Riscos</span>
+          <h2>Cada um com <span class="gradient-text">mitigação definida.</span></h2>
         </div>
         <div class="risks">
-          <div class="risk"><div class="risk-dot"></div><div><h4>Brasil eliminado na fase de grupos</h4><p><em>Mitigacao:</em> plano focado em outros times grandes (Argentina, Franca, Inglaterra). Bar continua cheio.</p></div></div>
-          <div class="risk"><div class="risk-dot"></div><div><h4>Sobrecarga das maquinas em dia de Brasil</h4><p><em>Mitigacao:</em> operacao dobrada + monitoramento real-time. Redistribuicao em 30min.</p></div></div>
-          <div class="risk"><div class="risk-dot"></div><div><h4>Crise publica com bug no Hunt (A)</h4><p><em>Mitigacao:</em> painel de killswitch para desativar bau remotamente. Mensagem padronizada.</p></div></div>
-          <div class="risk"><div class="risk-dot"></div><div><h4>Brahma nao fecha</h4><p><em>Mitigacao:</em> plano B: TIM, Vivo, Cervejaria Praya, Heineken. Diversificar contato.</p></div></div>
-          <div class="risk"><div class="risk-dot"></div><div><h4>Atraso Apple Store (A)</h4><p><em>Mitigacao:</em> PWA fallback ou liberar Android no D1, iOS no D3-5.</p></div></div>
+          <div class="risk"><div class="risk-dot"></div><div><h4>Brasil eliminado na fase de grupos</h4><p><em>Mitigação:</em> plano focado em outros times grandes. Bar continua cheio.</p></div></div>
+          <div class="risk"><div class="risk-dot"></div><div><h4>Sobrecarga das máquinas em dia de Brasil</h4><p><em>Mitigação:</em> operação dobrada + monitoramento real-time. Redistribuição em 30min.</p></div></div>
+          <div class="risk"><div class="risk-dot"></div><div><h4>Crise pública com bug no Hunt (A)</h4><p><em>Mitigação:</em> painel de killswitch para desativar baú remotamente.</p></div></div>
+          <div class="risk"><div class="risk-dot"></div><div><h4>Brahma não fecha</h4><p><em>Mitigação:</em> TIM, Vivo, Praya, Heineken. Diversificar contato.</p></div></div>
+          <div class="risk"><div class="risk-dot"></div><div><h4>Atraso Apple Store (A)</h4><p><em>Mitigação:</em> PWA fallback ou liberar Android no D1, iOS no D3-5.</p></div></div>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <!-- 16. PROXIMAS 72H -->
-      <section>
-        <div class="slide-header">
-          <div class="accent-bar"></div>
-          <div>
-            <h2>Acoes nas proximas 72h</h2>
-            <p class="sub">Sem isso, o cronograma nao fecha.</p>
-          </div>
+    <!-- 16. PROXIMAS 72H -->
+    <section class="slide" data-bg="dark">
+      <div class="slide-inner">
+        <div class="slide-head">
+          <span class="kicker">12 — Ações 72h</span>
+          <h2>Sem isso, <span class="gradient-text">o cronograma não fecha.</span></h2>
         </div>
         <div class="actions">
           <div class="action"><span class="check"></span><div class="action-who">DIOGO</div><div class="action-what">Contato direto com Brahma marketing</div></div>
-          <div class="action"><span class="check"></span><div class="action-who">ANA</div><div class="action-what">Lista dos 30 bares-ancora RJ com confirmacao de adesivagem</div></div>
-          <div class="action"><span class="check"></span><div class="action-who">DEV</div><div class="action-what">Reuniao para cravar escopo dual (Hunt + Wallet fallback)</div></div>
-          <div class="action"><span class="check"></span><div class="action-who">F3X MKT</div><div class="action-what">Brief Meta Ads + Google UAC + TikTok pre-Copa</div></div>
+          <div class="action"><span class="check"></span><div class="action-who">ANA</div><div class="action-what">Lista dos 30 bares-âncora RJ com confirmação de adesivagem</div></div>
+          <div class="action"><span class="check"></span><div class="action-who">DEV</div><div class="action-what">Reunião para cravar escopo dual (Hunt + Wallet fallback)</div></div>
+          <div class="action"><span class="check"></span><div class="action-who">F3X MKT</div><div class="action-what">Brief Meta Ads + Google UAC + TikTok pré-Copa</div></div>
           <div class="action"><span class="check"></span><div class="action-who">F3X MKT</div><div class="action-what">Shortlist 15 creators (RJ/SP/BH) + abordagem</div></div>
-          <div class="action"><span class="check"></span><div class="action-who">F3X MKT</div><div class="action-what">Produzir adesivo Copa + impressao 30 bares</div></div>
-          <div class="action"><span class="check"></span><div class="action-who">RAFAELA</div><div class="action-what">Aprovar reserva orcamentaria de R$ 145-215k</div></div>
+          <div class="action"><span class="check"></span><div class="action-who">F3X MKT</div><div class="action-what">Produzir adesivo Copa + impressão 30 bares</div></div>
+          <div class="action"><span class="check"></span><div class="action-who">RAFAELA</div><div class="action-what">Aprovar reserva orçamentária de R$ 145-215k</div></div>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <!-- 17. FECHAMENTO -->
-      <section data-state="closing">
-        <div class="closing">
-          <img src="brand/logo-ingoo.svg" alt="INGOO" class="closing-logo">
-          <h1 class="closing-h1">A Copa e a janela.<br><span class="gradient-text">O Hunt e o turbo.</span></h1>
-          <p class="closing-sub">A execucao e o que separa A de B.</p>
-          <div class="closing-cta">
-            <div class="cta-label">PROXIMO PASSO</div>
-            <div class="cta-line">Alinhamento Diogo + Ana + Rafaela + dev essa semana.</div>
-            <div class="cta-line cta-highlight">Decisao A vs B em 13/jun.</div>
+    <!-- 17. EVENTOS DE JUNHO -->
+    <section class="slide" data-bg="dark">
+      <div class="slide-bg">
+        <img src="brand/scene-event.jpg" alt="" class="slide-bg-img bg-right">
+        <div class="slide-bg-fade fade-from-left"></div>
+      </div>
+      <div class="slide-inner">
+        <div class="slide-head">
+          <span class="kicker">13 — Junho ao vivo</span>
+          <h2>2 eventos, <span class="gradient-text">milhares de pessoas.</span></h2>
+          <p class="sub">Como converter visitante do site em <strong>download do app</strong> — sem perder ninguém.</p>
+        </div>
+
+        <div class="events-grid">
+          <div class="event-card event-card-a">
+            <div class="ev-tag">EVENTO 1</div>
+            <h3>Village Superbet</h3>
+            <div class="ev-meta">
+              <span><strong>Local:</strong> Jockey Club RJ</span>
+              <span><strong>Público:</strong> apostas, lifestyle, jovem-adulto AB</span>
+            </div>
+          </div>
+          <div class="event-card event-card-a">
+            <div class="ev-tag">EVENTO 2</div>
+            <h3>Caminho Niemeyer</h3>
+            <div class="ev-meta">
+              <span><strong>Local:</strong> Niterói</span>
+              <span><strong>Público:</strong> cultura, família, gastronomia</span>
+            </div>
           </div>
         </div>
-      </section>
 
-    </div>
-  </div>
+        <div class="tactics-grid">
+          <div class="tactic">
+            <span class="t-num">01</span>
+            <span class="t-title">QR no estande aponta SÓ pro app</span>
+            <span class="t-desc">Sem fallback web. Deep link iOS/Android com Branch.io ou Adjust — quem não tem app é levado direto à store.</span>
+          </div>
+          <div class="tactic">
+            <span class="t-num">02</span>
+            <span class="t-title">Wi-Fi grátis "Ingoo App"</span>
+            <span class="t-desc">Liberação só após download confirmado. SSID com nome explícito. Captive portal valida via deep link.</span>
+          </div>
+          <div class="tactic">
+            <span class="t-num">03</span>
+            <span class="t-title">Cupom exclusivo no app</span>
+            <span class="t-desc">"Brinde Village Superbet" / "Selo Niemeyer" só aparece na Wallet do app — site não mostra.</span>
+          </div>
+          <div class="tactic">
+            <span class="t-num">04</span>
+            <span class="t-title">Hostess paga 1 chopp na hora</span>
+            <span class="t-desc">Equipe física no estande: você baixa o app na frente dela, ela autoriza brinde com QR de validação.</span>
+          </div>
+          <div class="tactic">
+            <span class="t-num">05</span>
+            <span class="t-title">Sorteio físico só com app</span>
+            <span class="t-desc">Premio aspiracional (iPhone, Apple Watch, vale Superbet R$ 500). Entrada requer perfil completo no app + 1 aluguel.</span>
+          </div>
+          <div class="tactic">
+            <span class="t-num">06</span>
+            <span class="t-title">Geofence push</span>
+            <span class="t-desc">Quem já tem app instalado e entra no Jockey/Niemeyer recebe push: "Bem-vindo. Há um cupom esperando." Reabertura imediata.</span>
+          </div>
+          <div class="tactic">
+            <span class="t-num">07</span>
+            <span class="t-title">Smart banner no site</span>
+            <span class="t-desc">Site mobile detecta geolocalização do evento e troca CTA "Alugar" por "Baixe o app — cupom exclusivo dentro".</span>
+          </div>
+          <div class="tactic">
+            <span class="t-num">08</span>
+            <span class="t-title">Stamps de evento</span>
+            <span class="t-desc">App ganha selo "Village Superbet 2026" + "Niemeyer 2026". 2 selos = prêmio. Vira coleção sazonal (Copa, Carnaval...).</span>
+          </div>
+          <div class="tactic">
+            <span class="t-num">09</span>
+            <span class="t-title">Influencers do evento</span>
+            <span class="t-desc">Creators presentes postam stories com QR direto do app. Cada story = link rastreado por UTM + Branch.</span>
+          </div>
+        </div>
+      </div>
+    </section>
 
-  <!-- Header fixo de marca -->
-  <div class="brand-header">
-    <img src="brand/logo-ingoo.svg" alt="INGOO" class="brand-header-logo">
-    <div class="brand-divider"></div>
-    <span class="brand-text">Plano de Crescimento Copa 2026</span>
-  </div>
+    <!-- 18. FECHAMENTO -->
+    <section class="slide slide-closing">
+      <div class="closing-bg">
+        <img src="brand/hero-bg.jpg" alt="" class="closing-bg-img">
+        <div class="closing-bg-overlay"></div>
+      </div>
+      <div class="closing-content">
+        <img src="brand/logo-everywhere-color.png" alt="INGOO EVERYWHERE" class="closing-logo">
+        <h1 class="closing-h1">
+          A Copa é a janela.<br>
+          <span class="gradient-text">O Hunt é o turbo.</span>
+        </h1>
+        <p class="closing-sub">A execução é o que separa A de B.</p>
+        <div class="closing-cta">
+          <div class="cta-label">PRÓXIMO PASSO</div>
+          <div class="cta-line">Alinhamento Diogo + Ana + Rafaela + dev esta semana.</div>
+          <div class="cta-line cta-highlight">Decisão A vs B em 13/jun.</div>
+        </div>
+      </div>
+    </section>
 
-  <script src="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/reveal.js"></script>
+  </main>
+
   <script>
-    Reveal.initialize({
-      hash: true,
-      controls: true,
-      progress: true,
-      center: false,
-      transition: 'slide',
-      transitionSpeed: 'default',
-      backgroundTransition: 'fade',
-      width: 1280,
-      height: 720,
-      margin: 0.02,
-      minScale: 0.2,
-      maxScale: 2.0,
-      slideNumber: 'c/t',
-      disableLayout: false,
-    });
+    (function() {
+      const slides = document.querySelectorAll('.slide');
+      const total = slides.length;
+      const totEl = document.getElementById('totSlide');
+      const curEl = document.getElementById('curSlide');
+      const fillEl = document.getElementById('progressFill');
+      const prevBtn = document.getElementById('prevBtn');
+      const nextBtn = document.getElementById('nextBtn');
+      const deck = document.querySelector('.deck');
+      let current = 0;
+
+      totEl.textContent = total;
+      // ajusta total no botao mesmo se HTML inicial estava com 17
+      document.getElementById('totSlide').textContent = total;
+
+      function goTo(idx) {
+        idx = Math.max(0, Math.min(total - 1, idx));
+        current = idx;
+        slides[idx].scrollIntoView({ behavior: 'smooth', block: 'start' });
+        update();
+      }
+      function update() {
+        curEl.textContent = (current + 1);
+        fillEl.style.width = (((current + 1) / total) * 100) + '%';
+        prevBtn.disabled = (current === 0);
+        nextBtn.disabled = (current === total - 1);
+        // hash sync
+        const hash = '#/' + (current + 1);
+        if (location.hash !== hash) history.replaceState(null, '', hash);
+      }
+
+      prevBtn.addEventListener('click', () => goTo(current - 1));
+      nextBtn.addEventListener('click', () => goTo(current + 1));
+
+      // keyboard
+      window.addEventListener('keydown', (e) => {
+        if (e.key === 'ArrowRight' || e.key === 'PageDown' || e.key === ' ') { e.preventDefault(); goTo(current + 1); }
+        else if (e.key === 'ArrowLeft' || e.key === 'PageUp') { e.preventDefault(); goTo(current - 1); }
+        else if (e.key === 'Home') { goTo(0); }
+        else if (e.key === 'End') { goTo(total - 1); }
+        else if (e.key === 'f' || e.key === 'F') {
+          if (!document.fullscreenElement) document.documentElement.requestFullscreen();
+          else document.exitFullscreen();
+        }
+      });
+
+      // observe which slide is in view (scroll)
+      const io = new IntersectionObserver((entries) => {
+        entries.forEach(e => {
+          if (e.isIntersecting && e.intersectionRatio > 0.5) {
+            const idx = Array.from(slides).indexOf(e.target);
+            if (idx !== current) { current = idx; update(); }
+          }
+        });
+      }, { threshold: [0.5, 0.6, 0.7] });
+      slides.forEach(s => io.observe(s));
+
+      // hash initial
+      const m = location.hash.match(/^#\/(\d+)$/);
+      if (m) goTo(parseInt(m[1], 10) - 1);
+      else update();
+    })();
   </script>
 </body>
 </html>
