@@ -228,9 +228,10 @@ button { font: inherit; cursor: pointer; border: 0; background: transparent; col
   opacity: 0.18;
 }
 .slide-bg-img.bg-right {
-  width: 50%;
+  width: 55%;
   right: 0; left: auto;
-  opacity: 0.22;
+  opacity: 0.42;
+  object-position: center;
 }
 .slide-bg-img.bg-app {
   width: 32%;
@@ -257,7 +258,9 @@ button { font: inherit; cursor: pointer; border: 0; background: transparent; col
 .slide-bg-fade.fade-from-left {
   position: absolute;
   inset: 0;
-  background: linear-gradient(90deg, var(--bg-dark) 30%, rgba(10,10,15,0.7) 60%, transparent 100%);
+  background:
+    linear-gradient(90deg, var(--bg-dark) 32%, rgba(10,10,15,0.85) 55%, rgba(10,10,15,0.35) 100%),
+    radial-gradient(800px 600px at 100% 50%, rgba(196,98,45,0.18) 0%, transparent 70%);
 }
 
 /* radial ambient gradient on every slide */
@@ -362,19 +365,19 @@ em { color: var(--primary-light); font-style: normal; font-weight: 600; }
   z-index: 1;
 }
 .cover-bg-img {
-  width: 50%;
+  width: 60%;
   height: 100%;
   object-fit: cover;
   object-position: center;
-  margin-left: 50%;
-  opacity: 0.45;
+  margin-left: 40%;
+  opacity: 0.55;
 }
 .cover-bg-overlay {
   position: absolute;
   inset: 0;
   background:
-    linear-gradient(90deg, var(--bg-dark) 35%, rgba(10,10,15,0.85) 55%, rgba(10,10,15,0.3) 100%),
-    radial-gradient(800px 600px at 20% 50%, rgba(196, 98, 45, 0.18) 0%, transparent 60%);
+    linear-gradient(90deg, var(--bg-dark) 35%, rgba(10,10,15,0.85) 55%, rgba(10,10,15,0.15) 100%),
+    radial-gradient(900px 700px at 18% 55%, rgba(196, 98, 45, 0.22) 0%, transparent 60%);
 }
 .cover-content {
   position: relative;
@@ -1099,14 +1102,14 @@ em { color: var(--primary-light); font-style: normal; font-weight: 600; }
   height: 100%;
   object-fit: cover;
   object-position: center;
-  opacity: 0.35;
+  opacity: 0.45;
 }
 .closing-bg-overlay {
   position: absolute;
   inset: 0;
   background:
-    linear-gradient(90deg, var(--bg-dark) 25%, rgba(10,10,15,0.85) 60%, rgba(10,10,15,0.5) 100%),
-    radial-gradient(900px 600px at 30% 50%, rgba(196,98,45,0.18) 0%, transparent 60%);
+    linear-gradient(90deg, var(--bg-dark) 28%, rgba(10,10,15,0.75) 60%, rgba(10,10,15,0.35) 100%),
+    radial-gradient(1000px 700px at 25% 50%, rgba(196,98,45,0.25) 0%, transparent 65%);
 }
 .closing-content {
   position: relative;
