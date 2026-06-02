@@ -108,6 +108,42 @@ button { font: inherit; cursor: pointer; border: 0; background: transparent; col
 }
 
 /* ============================================
+   LANG SWITCHER (no brand-header)
+   ============================================ */
+.lang-switcher {
+  display: flex;
+  gap: 2px;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-pill);
+  padding: 3px;
+  margin-left: 6px;
+  pointer-events: auto;
+}
+.lang-switcher .lang-btn {
+  padding: 4px 10px;
+  font-family: var(--font-display);
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  color: var(--text-dim);
+  background: transparent;
+  border: 0;
+  border-radius: var(--radius-pill);
+  text-decoration: none;
+  transition: var(--transition);
+  cursor: pointer;
+}
+.lang-switcher .lang-btn:hover { color: var(--text); }
+.lang-switcher .lang-btn.active {
+  background: var(--primary);
+  color: var(--white);
+}
+
+/* permite cliques no header onde antes era pointer-events: none */
+.brand-header { pointer-events: auto; }
+
+/* ============================================
    NAVIGATION (bottom-center)
    ============================================ */
 .deck-nav {
