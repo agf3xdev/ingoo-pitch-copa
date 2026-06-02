@@ -565,6 +565,7 @@ em { color: var(--primary-light); font-style: normal; font-weight: 600; }
 }
 .pill-brand { background: var(--gradient-brand); color: var(--white); }
 .pill-muted { background: var(--bg-elevated); color: var(--text-muted); border: 1px solid var(--border-strong); }
+.pill-lean  { background: rgba(255, 200, 87, 0.15); color: var(--accent); border: 1px solid rgba(255, 200, 87, 0.4); }
 
 /* ============================================
    SCENARIO CARDS
@@ -579,13 +580,19 @@ em { color: var(--primary-light); font-style: normal; font-weight: 600; }
   min-height: 0;
 }
 .scenario-a {
+  border-color: rgba(255, 200, 87, 0.4);
+  background: linear-gradient(160deg, rgba(255,200,87,0.06) 0%, var(--bg-card) 60%);
+}
+.scenario-b {
   border-color: var(--border-brand);
   box-shadow: var(--shadow-brand);
   background: linear-gradient(160deg, rgba(196,98,45,0.06) 0%, var(--bg-card) 60%);
 }
-.scenario-b {
+.scenario-c {
   border-color: var(--border-strong);
 }
+.scenario-a .scenario-list li span { color: var(--accent); }
+.lean-value { color: var(--accent); font-weight: 700; }
 .scenario h3 {
   font-size: clamp(20px, 2vw, 30px);
   margin-bottom: 4px;
@@ -857,6 +864,10 @@ em { color: var(--primary-light); font-style: normal; font-weight: 600; }
 .compare tbody td:first-child { color: var(--text-soft); font-weight: 500; }
 .compare tbody td { color: var(--text); }
 .compare .td-a { color: var(--primary-light); font-weight: 600; }
+.compare .th-lean { color: var(--accent); }
+.compare .td-lean { color: var(--accent); font-weight: 600; }
+.compare.compare-3 { font-size: clamp(11px, 0.95vw, 14px); }
+.compare.compare-3 th, .compare.compare-3 td { padding: clamp(8px, 1.2vh, 13px) clamp(12px, 1.5vw, 18px); }
 
 /* ============================================
    TIMELINE
@@ -1076,6 +1087,90 @@ em { color: var(--primary-light); font-style: normal; font-weight: 600; }
 }
 
 /* ============================================
+   LEAN (Cenário A — Bootstrap)
+   ============================================ */
+.lean-grid {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: clamp(12px, 1.5vh, 18px) clamp(14px, 1.8vw, 22px);
+  display: flex;
+  flex-direction: column;
+}
+.lean-row {
+  display: grid;
+  grid-template-columns: 130px 100px 1fr;
+  align-items: center;
+  gap: 12px;
+  padding: 8px 0;
+  border-bottom: 1px dashed var(--border);
+  font-size: clamp(11px, 0.92vw, 13px);
+}
+.lean-row:last-child { border-bottom: 0; }
+.lean-cat {
+  font-family: var(--font-display);
+  font-size: 10px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--text-soft);
+  font-weight: 600;
+}
+.lean-val {
+  font-family: var(--font-display);
+  font-size: clamp(13px, 1.05vw, 16px);
+  font-weight: 700;
+  color: var(--text);
+  text-align: right;
+}
+.lean-note {
+  font-size: clamp(11px, 0.85vw, 13px);
+  color: var(--text-muted);
+}
+.lean-total {
+  margin-top: 6px;
+  padding-top: 12px;
+  border-top: 2px solid var(--accent);
+  border-bottom: 0;
+}
+.lean-total .lean-cat {
+  color: var(--accent);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+}
+.lean-val-total {
+  font-size: clamp(20px, 1.7vw, 26px);
+  color: var(--accent) !important;
+}
+.lean-kpis {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 10px;
+  margin-top: 14px;
+}
+.lean-kpi {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-top: 3px solid var(--accent);
+  border-radius: var(--radius);
+  padding: 12px 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.lean-kpi strong {
+  font-family: var(--font-display);
+  font-size: clamp(15px, 1.4vw, 22px);
+  font-weight: 700;
+  color: var(--accent);
+  line-height: 1;
+}
+.lean-kpi span {
+  font-size: clamp(10px, 0.8vw, 12px);
+  color: var(--text-muted);
+}
+
+/* ============================================
    FOOTNOTE
    ============================================ */
 .footnote {
@@ -1169,6 +1264,12 @@ em { color: var(--primary-light); font-style: normal; font-weight: 600; }
 /* ============================================
    RESPONSIVO
    ============================================ */
+@media (max-width: 1100px) {
+  .lean-kpis { grid-template-columns: repeat(3, 1fr); }
+  .lean-row { grid-template-columns: 1fr; gap: 4px; }
+  .lean-val { text-align: left; }
+}
+
 @media (max-width: 960px) {
   .brand-header { right: 14px; top: 14px; padding: 6px 12px 6px 10px; }
   .brand-text { font-size: 9px; }
