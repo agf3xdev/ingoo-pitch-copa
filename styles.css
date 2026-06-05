@@ -1302,6 +1302,48 @@ em { color: var(--primary-light); font-style: normal; font-weight: 600; }
 /* ============================================
    RESPONSIVO
    ============================================ */
+/* ============================================
+   PRINT (PDF export)
+   ============================================ */
+@media print {
+  @page {
+    size: 1280px 720px;
+    margin: 0;
+  }
+  html, body {
+    width: auto !important;
+    height: auto !important;
+    overflow: visible !important;
+    background: var(--bg-dark) !important;
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+  .deck {
+    height: auto !important;
+    overflow: visible !important;
+    scroll-snap-type: none !important;
+  }
+  .slide {
+    width: 1280px !important;
+    height: 720px !important;
+    break-after: page;
+    page-break-after: always;
+    scroll-snap-align: none !important;
+    overflow: hidden !important;
+  }
+  .slide:last-child {
+    break-after: auto;
+    page-break-after: auto;
+  }
+  .deck-nav, .progress-bar, .lang-switcher { display: none !important; }
+  .brand-header { position: absolute !important; }
+  /* assegura que imagens de fundo apareçam */
+  .slide-bg-img, .cover-bg-img, .closing-bg-img {
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+}
+
 @media (max-width: 1100px) {
   .lean-kpis { grid-template-columns: repeat(3, 1fr); }
   .lean-row { grid-template-columns: 1fr; gap: 4px; }
