@@ -1016,16 +1016,17 @@ em { color: var(--primary-light); font-style: normal; font-weight: 600; }
    ============================================ */
 .actions { display: flex; flex-direction: column; gap: 8px; }
 .action {
-  display: grid;
-  grid-template-columns: 28px 1fr;
-  gap: 16px;
+  display: flex;
   align-items: center;
+  gap: 18px;
   background: var(--bg-card);
   border: 1px solid var(--border);
   border-radius: var(--radius);
-  padding: clamp(11px, 1.4vh, 16px) clamp(18px, 2vw, 24px);
+  padding: clamp(14px, 1.6vh, 20px) clamp(20px, 2.2vw, 28px);
   transition: var(--transition);
 }
+.action .check { flex-shrink: 0; }
+.action .action-what { flex: 1; }
 .action:hover { border-color: var(--border-brand); }
 .check {
   width: 18px;
@@ -1043,7 +1044,8 @@ em { color: var(--primary-light); font-style: normal; font-weight: 600; }
 }
 .action-what {
   color: var(--text);
-  font-size: clamp(12px, 1vw, 14px);
+  font-size: clamp(14px, 1.15vw, 17px);
+  line-height: 1.45;
 }
 
 /* ============================================
